@@ -12,7 +12,7 @@ mkdir -p "$NLTK_LOCAL_DATA_PATH"
 echo "--- Downloading NLTK data ---"
 python -c "import nltk; nltk.download('stopwords', download_dir='$NLTK_LOCAL_DATA_PATH'); nltk.download('punkt', download_dir='$NLTK_LOCAL_DATA_PATH'); nltk.download('punkt_tab', download_dir='$NLTK_LOCAL_DATA_PATH')"
 
-echo "Downloading spaCy NLP model (medium version)..."
-python -m spacy download en_core_web_md
+echo "Downloading spaCy NLP model (small version)..."
+python -m spacy download en_core_web_sm
 
 echo "Build process complete."
